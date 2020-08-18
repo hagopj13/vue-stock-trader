@@ -20,9 +20,8 @@ const mutations = {
 };
 
 const actions = {
-  buyStock(context) {
-    // TODO
-    context.commit();
+  buyStock(context, order) {
+    context.commit('BUY_STOCK', order);
   },
   initStocks(context) {
     context.commit('SET_STOCKS', stocks);
