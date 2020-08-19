@@ -16,7 +16,7 @@
         <strong class="navbar-text navbar-right">Funds: {{ funds | currency }}</strong>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a @click="endDay">End Day</a>
+            <a href="" @click.prevent="endDay">End Day</a>
           </li>
           <li
             class="dropdown"
@@ -25,6 +25,7 @@
           >
             <a
               href="#"
+              @click.prevent
               class="dropdown-toggle"
               data-toggle="dropdown"
               role="button"
@@ -36,10 +37,10 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a @click="saveData">Save Data</a>
+                <a href="" @click.prevent="saveData">Save Data</a>
               </li>
               <li>
-                <a @click="loadData">Load Data</a>
+                <a href="" @click.prevent="loadData">Load Data</a>
               </li>
             </ul>
           </li>
